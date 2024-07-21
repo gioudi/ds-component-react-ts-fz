@@ -35,7 +35,7 @@ To install the component library, run:
 npm install ds-component-react-ts-fz
 ``` 
 ## Structure
-
+```
 ds-component-library/
 ├── .storybook/
 │   ├── main.ts
@@ -66,4 +66,4 @@ ds-component-library/
 ├── tsconfig.json
 ├── tsconfig.paths.json
 
-
+```
