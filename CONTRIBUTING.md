@@ -1,0 +1,1 @@
+This setup should give you a solid foundation for the project
