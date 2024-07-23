@@ -1,0 +1,10 @@
+.fz-tag,.fz-badge {
+    display: inline-flex;
+    border: 1px solid $black;
+    border-radius: 0;
+    font-family: $font-family-lato;
+    font-weight: 400;
+    padding: .625rem 1.25rem;
+    box-shadow: $box-shadow-md;
+    font-size: $font-size-small;
+}
