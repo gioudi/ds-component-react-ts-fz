@@ -13,10 +13,16 @@
     font-family: $font-family-rufina;
     transition: all 1s ease;
 
-    &:hover, &:focus, &:active {
+    &:hover:not(:disabled), &:focus, &:active {
         text-decoration: none;
         background: transparent;
         border-color: $gray-light;
+    }
+
+    &:disabled {
+        background-color: $gray-light;
+        color: $gray-dark;
+        border-color: $gray-dark;
     }
 
     &.fz-btn--loading {
@@ -34,7 +40,7 @@
     &.fz-btn--small {
         height: 2rem;
         padding: .5rem 1rem;
-        font-size:$font-size-extra-small;
+        font-size: $font-size-extra-small;
     }
 
     &.fz-btn--primary {
