@@ -1,0 +1,55 @@
+.fz-filter, .fz-filter--dotted {
+    display: flex;
+    gap: .625rem;
+    color: $black;
+    font-family: $font-family-lato;
+    font-weight: 400;
+    padding: .5rem 1rem;
+    overflow-x: auto;
+  
+    &__option {
+      margin: 0 1.5rem;
+      display: inline-flex;
+      align-items: flex-start;
+      border: none;
+      color: inherit;
+      border-radius: 0;
+      background: transparent;
+      transition: border-bottom 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), color 0.3s ease-in-out;
+  
+      &.active {
+        border-bottom: 1px dotted $primary-darkest;
+        color: $primary-darkest;
+      }
+  
+      &:hover {
+        color: $primary-darkest;
+        border-bottom: 1px dotted $primary-darkest;
+      }
+    }
+  
+    &:first-child {
+      .fz-filter__option {
+        margin-left: 0;
+      }
+    }
+
+
+}
+
+.fz-filter {
+    &.fz-filter--solid {
+        .fz-filter__option {
+            &.active {
+                border-bottom: 1px solid $primary-darkest;
+                color: $primary-darkest;
+              }
+          
+              &:hover {
+                color: $primary-darkest;
+                border-bottom: 1px solid $primary-darkest;
+              }  
+        }
+    }
+}
+  
