@@ -1,0 +1,33 @@
+.fz-paginator {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    &__button {
+        border: 1px solid $black;
+        padding: .3125rem .625rem;
+        background: transparent;
+        color: $black;
+        font-weight: 400;
+        font-family: $font-family-lato;
+        font-size: 1rem;
+        box-sizing: border-box;
+        word-break: break-word;
+        min-width: 2.5rem;
+        height: 2.5rem;
+        box-shadow: $box-shadow-sm;
+        transition: background-color 1.5s ease;
+
+        &:disabled {
+            background-color: $gray-light;
+            color: $gray-dark;
+            border-color: $gray-dark;
+        }
+        &.active,  &:active {
+            background-color: $primary-light;
+        }
+        &:hover:not(:disabled) {
+            background-color: $primary-lightest;
+        }
+    }
+}
