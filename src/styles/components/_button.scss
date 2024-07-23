@@ -1,3 +1,64 @@
 .fz-btn {
-    color: blue !important;
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 2.75rem;
+    box-sizing: border-box;
+    padding: .625rem 1.5rem;
+    font-size: 1rem;
+    color: $black;
+    border: 1px solid $black;
+    background: transparent;
+    border-radius: 0;
+    font-family: $font-family-rufina;
+    transition: all 1s ease;
+
+    &:hover, &:focus, &:active {
+        text-decoration: none;
+        background: transparent;
+        border-color: $gray-light;
+    }
+
+    &.fz-btn--loading {
+        .fz-btn__loader {
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+
+    &.fz-btn--large {
+        height: 3.625rem;
+        font-size: $font-size-normal;
+    }
+    
+    &.fz-btn--small {
+        height: 2rem;
+        padding: .5rem 1rem;
+        font-size:$font-size-extra-small;
+    }
+
+    &.fz-btn--primary {
+        background-color: $primary-darker;
+        color: $white;
+
+        &:hover, &:active, &:focus, &:visited {
+            background-color: $primary-darkest;
+            color: $white;
+        }
+    }
+
+    &.fz-btn--secondary {
+        background-color: $primary-lightest;
+
+        &:hover, &:active, &:focus, &:visited {
+            background-color: $primary-light;
+        }
+    }
 }
+
+
+
+
+
+
+
