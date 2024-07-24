@@ -6,12 +6,12 @@ My Design System Components Library is a versatile and reusable set off UI compo
 
 ## Features
 
-**React and TypeScript**: Ensures type safety and improved developer productivity.
-**StoryBook**: Provides an interactive development and documentation environment for UI components.
-**Bootstrap 5**: Offers a responsive and customizable design system.
-**SCSS**: Facilitates advanced styling capabilities.
-**Jest**: Enables comprehensive unit testing.
-**Design Patterns**: Implements design patterns like Factory for component creation and usage.
+- **React and TypeScript**: Ensures type safety and improved developer productivity.
+- **StoryBook**: Provides an interactive development and documentation environment for UI components.
+- **Bootstrap 5**: Offers a responsive and customizable design system.
+- **SCSS**: Facilitates advanced styling capabilities.
+- **Jest**: Enables comprehensive unit testing.
+- **Design Patterns**: Implements design patterns like Factory for component creation and usage.
 
 ## Author
 
@@ -48,13 +48,10 @@ ds-component-library/
 │   ├── components/
 │   │   ├── Button/
 │   │   │   ├── Button.tsx
-│   │   │   ├── Button.scss
 │   │   │   ├── Button.stories.tsx
 │   │   │   ├── Button.test.tsx
-│   │   │   ├── ButtonFactory.tsx
 │   │   ├── AnotherComponent/
 │   │       ├── AnotherComponent.tsx
-│   │       ├── AnotherComponent.scss
 │   │       ├── AnotherComponent.stories.tsx
 │   │       ├── AnotherComponent.test.tsx
 ├── .eslintignore
