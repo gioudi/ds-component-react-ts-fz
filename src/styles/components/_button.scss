@@ -12,6 +12,7 @@
     border-radius: 0;
     font-family: $font-family-rufina;
     transition: all 1s ease;
+    box-shadow: $box-shadow-sm;
 
     &:hover:not(:disabled), &:focus, &:active {
         text-decoration: none;
