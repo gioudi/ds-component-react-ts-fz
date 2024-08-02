@@ -19,12 +19,13 @@ const Nav: React.FC<NavProps> = ({ options, logo, background, phone, urlButton, 
 
   return (
     <div className="fz-navbar navbar">
-      <div className="fz-navbar-header navbar-header">
-        <button className="fz-burger-icon" onClick={toggleMenu}>
-          {isOpen ? '✖' : '☰'}
+      <div className="fz-navbar__header ">
+        <button className={`fz-navbar__icon ${isOpen ? 'fz-navbar__icon--open': 'fz-navbar__icon--closed'}`} onClick={toggleMenu}>
+          <span className="burguer"></span>
         </button>
-        {logo && (<img src={logo} alt="Logo" className="fz-navbar-logo" />)}
-        <div>
+        {logo && (<img src={logo} alt="Logo" className="fz-navbar__logo" />)}
+ 
+        <div className="fz-navbar__button">
           {phone}
           {urlButton && (
             <a href={urlButton} target="_blank" rel="noopener noreferrer" className="fz-btn fz-btn-default">
@@ -34,7 +35,7 @@ const Nav: React.FC<NavProps> = ({ options, logo, background, phone, urlButton, 
         </div>
       </div>
       {isOpen && (
-        <div className="fz-navbar-menu" style={{ background }}>
+        <div className="fz-navbar__menu " style={{ background }}>
           <ul>
             {options?.map((option, index) => (
               <li key={index} onClick={toggleMenu}>
@@ -59,7 +60,7 @@ Nav.propTypes = {
 
 Nav.defaultProps = {
   options: [],
-  background: 'rgba(0,0,0,0.8)',
+  background: '#EBF0E4',
 };
 
 export default Nav;
